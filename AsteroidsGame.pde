@@ -34,9 +34,10 @@ public void keyPressed() {
     background(0);
   } 
   else if(key == 'w'){
-  double newCenter = Math.random()*700;
-    emily.setmyCenterX(newCenter);
-    emily.setmyCenterY(newCenter);
+  double newCenterX = Math.random()*700;
+  double newCenterY = Math.random()*700;
+    emily.setmyCenterX(newCenterX);
+    emily.setmyCenterY(newCenterY);
     emily.setmyXspeed(0);
     emily.setmyYspeed(0);
   }
