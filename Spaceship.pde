@@ -2,28 +2,25 @@ class Spaceship extends Floater
 { 
   int mySpeed;
   public Spaceship() {
-    corners = 3;
-    corners = 9;
-    xCorners = new int [corners];
-    yCorners = new int [corners];
-    xCorners[0] = 30;
-    yCorners[0] = 0;
-    xCorners[1] = 15;
-    yCorners[1] = 10;
-    xCorners[2] = 0;
-    yCorners[2] = 10;
-    xCorners[3] = -25;
-    yCorners[3] = 20;
-    xCorners[4] = -15;
-    yCorners[4] = 10;
-    xCorners[5] = -15;
-    yCorners[5] = -10;
-    xCorners[6] = -25;
-    yCorners[6] = -20;
-    xCorners[7] = 0;
-    yCorners[7] = -10;
-    xCorners[8] = 15;
-    yCorners[8] = -10;
+corners = 8;
+      xCorners = new int[corners];
+      yCorners = new int[corners];
+      xCorners[0] = -16; 
+      yCorners[0] = -16; 
+      xCorners[1] = 32; 
+      yCorners[1] = 0; 
+      xCorners[2] = -16; 
+      yCorners[2] = 16;
+      xCorners[3] = -24; 
+      yCorners[3] = 12; 
+      xCorners[4] = -32; 
+      yCorners[4] = 16; 
+      xCorners[5] = -40; 
+      yCorners[5] = 0;
+      xCorners[6] = -32; 
+      yCorners[6] = -16; 
+      xCorners[7] = -24; 
+      yCorners[7] = -12;
     myCenterX = 350;
     myCenterY = 350;
     myColor = color(255, 192, 203);
@@ -55,4 +52,10 @@ class Spaceship extends Floater
   public float getPointDirection(){
     return(float)myPointDirection;
   }
+   public double getDirectionX() {
+    return Math.cos(myPointDirection*(Math.PI/180));
+  } 
+  public double getDirectionY() {
+    return Math.sin(myPointDirection*(Math.PI/180));
+  } 
 }
