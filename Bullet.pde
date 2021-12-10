@@ -4,7 +4,7 @@ class Bullet extends Floater {
     myCenterY = emily2.getY();
     myXspeed = emily2.getXSpeed();
     myYspeed = emily2.getYSpeed();
-    myPointDirection = emily.getPointDirection();
+    myPointDirection = emily2.getPointDirection();
     accelerate(5);
   }
   public void show() {
