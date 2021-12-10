@@ -1,9 +1,9 @@
 class Bullet extends Floater {
-  public Bullet(Spaceship emily) {
-    myCenterX = emily.getX();
-    myCenterY = emily.getY();
-    myXspeed = emily.getXSpeed();
-    myYspeed = emily.getYSpeed();
+  public Bullet(Spaceship emily2) {
+    myCenterX = emily2.getX();
+    myCenterY = emily2.getY();
+    myXspeed = emily2.getXSpeed();
+    myYspeed = emily2.getYSpeed();
     myPointDirection = emily.getPointDirection();
     accelerate(5);
   }
